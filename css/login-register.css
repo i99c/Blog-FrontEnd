@@ -169,10 +169,10 @@ body {
 }
 
 .form-box .input-box {
-    width: 340px;
-    height: 50px;
-    border-bottom: 2px solid #e4e4e4;
-    margin: 30px 0;
+    width: 290px;
+    height: 80px;
+    border-bottom: 1px solid white;
+    margin: 20px 0;
 }
 
 .input-box input {
@@ -181,6 +181,78 @@ body {
     background: transparent;
     border: none;
     outline: none;
+}
+
+#remember-forgot {
+    font-size: 14.5px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#remember-forgot .checkbox {
+    margin-right: 5px;
+}
+
+.checkbox a {
+    margin-left: 15px;
+}
+
+/* --------------------Giriş Yap Btn------------------- */
+.register-btn {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    background: linear-gradient(45deg, #FF8AAE, #FFB2A6, #FFF89A, #9ADCFF, #D8B4F8, #FFC7EA, #FBF0B2);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.register-btn:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(to right, #FFCDEA, #FB9AD1, #BC7FCD, #00ff00, #86469C, #4b0082, #9400d3);
+    background-size: 600% 600%;
+    animation: gradient 5s ease infinite;
+    opacity: 0.5;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.register-btn:hover {
+    background: linear-gradient(45deg, #ff0000, #ffa500, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* ------------------------------------- Register ------------------------------------------------ */
