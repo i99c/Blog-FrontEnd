@@ -49,7 +49,7 @@ body {
 
 /* Features Bölümü Stili */
 .features {
-    background-color: #fff;
+    background-image: linear-gradient(to right, #F2DB94, #5941F2, #D91E0D);
     padding: 60px 0;
     display: flex;
     justify-content: space-around;
@@ -81,12 +81,13 @@ body {
 
 /* Blog Bölümü Stili */
 .blog {
-    background-color: #fff;
+    background-image: linear-gradient(to left, #020873, #052DA6, #0468BF, #0477BF);
     padding: 60px 0;
     text-align: center;
 }
 
 .blog h2 {
+    color: #F2DE79;
     font-size: 2.25rem;
     margin-bottom: 40px;
 }
@@ -106,6 +107,7 @@ body {
 }
 
 .blog-item h3 {
+    color: #401823;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
